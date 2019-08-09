@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Title>WkHtmlToPdf module for Orchard Core</Title>
+    <Description>Webkit engine to convert HTML pages to PDF.</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>OrchardCore.WkHtmlToPdf</PackageId>
+    <PackageTags>WkHtmlToPdf;OrchardCore</PackageTags>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IsPackable>true</IsPackable>
+    <IsShipping>true</IsShipping>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="libwkhtmltox.dll" />
+    <None Remove="libwkhtmltox.dylib" />
+    <None Remove="libwkhtmltox.so" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Include="libwkhtmltox.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="libwkhtmltox.dylib">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="libwkhtmltox.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DinkToPdf" Version="1.0.8" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.0.0-beta3-71958" />
+  </ItemGroup>
+
+</Project>
