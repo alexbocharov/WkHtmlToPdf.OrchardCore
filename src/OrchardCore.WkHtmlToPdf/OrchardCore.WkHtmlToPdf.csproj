@@ -9,13 +9,8 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IsPackable>true</IsPackable>
     <IsShipping>true</IsShipping>
+    <NoWarn>$(NoWarn);NU5100</NoWarn>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="libwkhtmltox.dll" />
-    <None Remove="libwkhtmltox.dylib" />
-    <None Remove="libwkhtmltox.so" />
-  </ItemGroup>
   
   <ItemGroup>
     <Content Include="libwkhtmltox.dll">
