@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <Import Project="Sdk.props" Sdk="Microsoft.DotNet.Arcade.Sdk" />
+
+  <PropertyGroup>
+    <LangVersion>preview</LangVersion>
+    <SignAssembly>false</SignAssembly>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <NoWarn>$(NoWarn);CS8002</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CopyrightOrchardWkHtmlToPdf>© 2019 Alexander Bocharov</CopyrightOrchardWkHtmlToPdf>
+    <Authors>Alexander Bocharov</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+</Project>
