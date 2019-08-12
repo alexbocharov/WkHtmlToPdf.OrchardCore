@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using OrchardCore.Modules;
 
-namespace OrchardCore.WkHtmlToPdf
+namespace WkHtmlToPdf.OrchardCore
 {
     public class Startup : StartupBase
     {

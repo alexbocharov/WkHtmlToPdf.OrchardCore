@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29123.89
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ED34D98C-4A59-4857-AF77-F32E9BF70836}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchardCore.WkHtmlToPdf", "src\OrchardCore.WkHtmlToPdf\OrchardCore.WkHtmlToPdf.csproj", "{949482B8-535B-459C-B837-C46C3AA00891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WkHtmlToPdf.OrchardCore", "src\WkHtmlToPdf.OrchardCore\WkHtmlToPdf.OrchardCore.csproj", "{949482B8-535B-459C-B837-C46C3AA00891}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
