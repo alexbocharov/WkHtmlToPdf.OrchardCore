@@ -95,7 +95,7 @@ stages:
             command: 'push'
             packagesToPush: '$(Build.SourcesDirectory)/artifacts/packages/**/*.nupkg;!$(Build.SourcesDirectory)/artifacts/packages/**/*.symbols.nupkg'
             nuGetFeedType: 'external'
-            publishFeedCredentials: 'MyGet'
+            publishFeedCredentials: 'NuGet'
 
       - job: OSX
         pool:
