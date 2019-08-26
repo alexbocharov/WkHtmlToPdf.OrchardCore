@@ -2,4 +2,7 @@
   <!--
     Add additional signing overrides here
   -->
+  <ItemGroup>
+    <FileSignInfo Include="WkHtmlToPdf.OrchardCore.dll" CertificateName="3PartySHA2" />
+  </ItemGroup>
 </Project>

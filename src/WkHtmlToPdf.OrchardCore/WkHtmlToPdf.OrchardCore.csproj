@@ -28,8 +28,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DinkToPdf" Version="1.0.8" />
-    <PackageReference Include="OrchardCore.Module.Targets" Version="1.0.0-beta3-71958" />
+    <PackageReference Include="DinkToPdf" Version="$(DinkToPdfPackageVersion)" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="$(OrchardCorePackagesVersion)" />
   </ItemGroup>
 
 </Project>
