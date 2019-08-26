@@ -9,22 +9,13 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IsPackable>true</IsPackable>
     <IsShipping>true</IsShipping>
-    <NoWarn>$(NoWarn);NU5100</NoWarn>
   </PropertyGroup>
-  
+
   <ItemGroup>
-    <Content Include="libwkhtmltox.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Include="libwkhtmltox.dylib">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Include="libwkhtmltox.so">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
+    <None Include="lib\**\*">
+      <Pack>True</Pack>
+      <PackagePath>lib</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
