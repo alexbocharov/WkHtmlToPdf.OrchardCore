@@ -12,15 +12,29 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="lib\**\*">
-      <Pack>True</Pack>
-      <PackagePath>lib</PackagePath>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="DinkToPdf" Version="$(DinkToPdfPackageVersion)" />
     <PackageReference Include="OrchardCore.Module.Targets" Version="$(OrchardCorePackagesVersion)" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="runtimes\win-x64\native\**\*">
+      <PackagePath>lib\$(TargetFramework)</PackagePath>
+      <Pack>true</Pack>
+    </Content>
+    <Content Include="runtimes\linux-x64\native\**\*">
+      <PackagePath>lib\$(TargetFramework)</PackagePath>
+      <Pack>true</Pack>
+    </Content>
+    <Content Include="runtimes\osx-x64\native\**\*">
+      <PackagePath>lib\$(TargetFramework)</PackagePath>
+      <Pack>true</Pack>
+    </Content>
+  </ItemGroup>
+
+  <!--<ItemGroup>
+    <None Include="runtimes\linux-x64\native\libwkhtmltox.so" />
+    <None Include="runtimes\osx-x64\native\libwkhtmltox.dylib" />
+    <None Include="runtimes\win-x64\native\libwkhtmltox.dll" />
+  </ItemGroup>-->
 
 </Project>
