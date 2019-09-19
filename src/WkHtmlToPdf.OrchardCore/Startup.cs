@@ -15,7 +15,7 @@ namespace WkHtmlToPdf.OrchardCore
             services.AddSingleton<IConverter>(new SynchronizedConverter(new PdfTools()));
         }
 
-        public override void Configure(IApplicationBuilder app, IRouteBuilder routes, IServiceProvider serviceProvider)
+        public override void Configure(IApplicationBuilder app, IEndpointRouteBuilder routes, IServiceProvider serviceProvider)
         {
         }
     }

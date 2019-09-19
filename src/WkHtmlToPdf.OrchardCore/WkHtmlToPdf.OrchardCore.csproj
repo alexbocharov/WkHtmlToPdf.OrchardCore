@@ -3,7 +3,8 @@
   <PropertyGroup>
     <Title>WkHtmlToPdf module for Orchard Core</Title>
     <Description>Webkit engine to convert HTML pages to PDF.</Description>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <PackageId>WkHtmlToPdf.OrchardCore</PackageId>
     <PackageTags>WkHtmlToPdf;OrchardCore</PackageTags>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
